@@ -54,12 +54,14 @@ python register.py catalog
 Read and write from Python:
 
 ```python
-from access import read_data_product, write_to_data_product, get_catalog
+from access import list_data_products, get_location, read_data_product
 
-write_to_data_product("movie_popularity", [{"movie_id": 1, "title": "Example", "views": 100}])
+print(list_data_products())
+print(get_location("movie_popularity"))
 print(read_data_product("movie_popularity"))
-print(get_catalog())
 ```
+
+A full runnable example is in `example.py`.
 
 ## What I learned
 
