@@ -15,7 +15,7 @@ Built for the Manning liveProject *Build a Self-Serve Data Platform* as part of 
 ## How it works
 
 - `register.py` creates a data product (a CSV with a defined schema) and adds one row for it in `data_folder/catalog.csv`.
-- `access.py` looks a data product up in the catalog and reads it into a pandas DataFrame, or appends rows to it.
+- `access.py` lists the data products in the catalog, looks up where one is stored, and reads it into a pandas DataFrame or appends rows to it. `example.py` shows it in use.
 
 ### Catalog attributes
 
